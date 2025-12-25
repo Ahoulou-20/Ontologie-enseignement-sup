@@ -11,12 +11,9 @@ Modéliser le domaine de l’**enseignement supérieur** à l’aide d’une ont
 - **SPARQL** pour les interrogations
 - Exports en **RDF/XML** (`.owl`) et **Turtle** (`.ttl`)
 
-## 📂 Structure du repository
+## 📂 Structure du repository (élément clés)
 - `enseignement-superieur.owl` → Ontologie complète au format RDF/XML (format standard OWL)
-- `enseignement-superieur.ttl` → Version Turtle (plus lisible)
-- `captures/` → Captures d’écran :
-  - `ontograph.png` → Graphe global de l’ontologie (OntoGraph)
-  - `sparql-*.png` → Exemples de requêtes SPARQL avec résultats
+- `enseignement-superieur.pdf` → rapport détaillé
 
 ## 🔑 Concepts principaux
 ### Classes
@@ -38,15 +35,6 @@ Modéliser le domaine de l’**enseignement supérieur** à l’aide d’une ont
 - Étudiants : Jane Doe, John Smith
 - Enseignants : Prof. Dupont, Assistant Martin
 - Cours : Introduction à l’IA, Machine Learning, etc.
-
-## ❓ Exemples de requêtes SPARQL
-(À exécuter dans Protégé ou tout endpoint SPARQL)
-
-1. Cours enseignés par Prof. Dupont
-2. Programmes offerts par l’Université de Paris
-3. Étudiants inscrits en licence
-4. Cours avec plus de 5 ECTS
-5. Tous les noms d’étudiants
 
 ## 🚀 Perspectives
 - Intégration avec FOAF ou schema.org
