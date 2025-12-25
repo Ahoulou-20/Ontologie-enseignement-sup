@@ -1,0 +1,368 @@
+Prefix(:=<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5>
+
+Declaration(Class(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Assistant>))
+Declaration(Class(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#BachelorDiploma>))
+Declaration(Class(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#BachelorProgram>))
+Declaration(Class(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#CoreCourse>))
+Declaration(Class(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Course>))
+Declaration(Class(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Departement>))
+Declaration(Class(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Diploma>))
+Declaration(Class(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#ElectiveCourse>))
+Declaration(Class(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#GraduateStudent>))
+Declaration(Class(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Institution>))
+Declaration(Class(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Library>))
+Declaration(Class(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MasterDiploma>))
+Declaration(Class(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MasterProgram>))
+Declaration(Class(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#OnlineResource>))
+Declaration(Class(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Person>))
+Declaration(Class(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#PhDDiploma>))
+Declaration(Class(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#PhDProgram>))
+Declaration(Class(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#PrivateUniversity>))
+Declaration(Class(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Professor>))
+Declaration(Class(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Program>))
+Declaration(Class(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#PublicUniversity>))
+Declaration(Class(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#ResearchLab>))
+Declaration(Class(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Resource>))
+Declaration(Class(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Student>))
+Declaration(Class(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Teacher>))
+Declaration(Class(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#UndergraduateStudent>))
+Declaration(Class(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#University>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#awards>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#collaboratesWith>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#enrolledIn>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasDepartment>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#includesCourse>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#offersProgram>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#supervises>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#teaches>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#usesResource>))
+Declaration(DataProperty(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasDuration>))
+Declaration(DataProperty(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasECTS>))
+Declaration(DataProperty(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasEnrollmentYear>))
+Declaration(DataProperty(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasID>))
+Declaration(DataProperty(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasLevel>))
+Declaration(DataProperty(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasName>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#AI101>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#AILab>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Algo201>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#AssistMartin>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#BScCS>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#BScDiploma>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#CSDept>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#JaneDoe>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#JohnSmith>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#LibraryParis>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#ML301>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MOOCAI>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MScAI>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MasterDiploma>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MathDept>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#ProfDupont>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#UnivParis>))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#awards> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#awards>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#awards> "Program → Diploma (un programme délivre un diplôme)")
+ObjectPropertyDomain(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#awards> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Program>)
+ObjectPropertyRange(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#awards> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Diploma>)
+
+# Object Property: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#collaboratesWith> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#collaboratesWith>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#collaboratesWith> "ResearchLab → Department (un labo collabore avec un département)")
+ObjectPropertyDomain(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#collaboratesWith> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#ResearchLab>)
+ObjectPropertyRange(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#collaboratesWith> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Departement>)
+
+# Object Property: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#enrolledIn> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#enrolledIn>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#enrolledIn> "Student → Program (un étudiant est inscrit dans un programme)")
+ObjectPropertyDomain(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#enrolledIn> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Student>)
+ObjectPropertyRange(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#enrolledIn> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Program>)
+
+# Object Property: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasDepartment> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasDepartment>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasDepartment> "University → Department (une université a des départements)")
+ObjectPropertyDomain(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasDepartment> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#University>)
+ObjectPropertyRange(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasDepartment> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Departement>)
+
+# Object Property: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#includesCourse> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#includesCourse>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#includesCourse> "Program → Course (un programme inclut des cours)")
+ObjectPropertyDomain(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#includesCourse> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Program>)
+ObjectPropertyRange(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#includesCourse> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Course>)
+
+# Object Property: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#offersProgram> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#offersProgram>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#offersProgram> "University → Program (une université propose des programmes)")
+ObjectPropertyDomain(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#offersProgram> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#University>)
+ObjectPropertyRange(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#offersProgram> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Program>)
+
+# Object Property: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#supervises> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#supervises>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#supervises> "Teacher → Student (un enseignant supervise un étudiant, ex. : thèse)")
+ObjectPropertyDomain(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#supervises> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Teacher>)
+ObjectPropertyRange(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#supervises> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Student>)
+
+# Object Property: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#teaches> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#teaches>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#teaches> "Teacher → Course (un enseignant enseigne un cours)")
+ObjectPropertyDomain(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#teaches> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Teacher>)
+ObjectPropertyRange(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#teaches> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Course>)
+
+# Object Property: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#usesResource> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#usesResource>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#usesResource> "Course → Resource (un cours utilise des ressources)")
+SubObjectPropertyOf(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#usesResource> owl:topObjectProperty)
+ObjectPropertyDomain(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#usesResource> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Course>)
+ObjectPropertyRange(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#usesResource> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Resource>)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasDuration> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasDuration>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasDuration> ""^^xsd:integer)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasDuration> "Program → integer (durée en années)")
+DataPropertyDomain(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasDuration> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Program>)
+DataPropertyRange(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasDuration> xsd:integer)
+
+# Data Property: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasECTS> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasECTS>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasECTS> ""^^xsd:integer)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasECTS> "Course → integer (crédits ECTS)")
+DataPropertyDomain(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasECTS> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Course>)
+DataPropertyRange(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasECTS> xsd:integer)
+
+# Data Property: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasEnrollmentYear> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasEnrollmentYear>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasEnrollmentYear> ""^^xsd:integer)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasEnrollmentYear> "Student → integer (année d'inscription)")
+DataPropertyDomain(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasEnrollmentYear> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Student>)
+DataPropertyRange(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasEnrollmentYear> xsd:integer)
+
+# Data Property: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasID> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasID>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasID> ""^^xsd:integer)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasID> "Student ou Teacher → integer (identifiant unique)")
+DataPropertyDomain(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasID> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Person>)
+DataPropertyRange(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasID> xsd:integer)
+
+# Data Property: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasLevel> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasLevel>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasLevel> "")
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasLevel> "Diploma → string (niveau, ex. : \"Bachelor\")")
+DataPropertyDomain(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasLevel> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Diploma>)
+DataPropertyRange(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasLevel> rdf:langString)
+
+# Data Property: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasName> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasName>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasName> ""^^rdf:langString)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasName> "Toute classe → string (nom de l'entité)")
+DataPropertyDomain(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasName> owl:Thing)
+DataPropertyRange(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasName> rdf:langString)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Assistant> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Assistant>)
+
+SubClassOf(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Assistant> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Teacher>)
+
+# Class: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#BachelorDiploma> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#BachelorDiploma>)
+
+SubClassOf(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#BachelorDiploma> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Diploma>)
+
+# Class: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#BachelorProgram> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#BachelorProgram>)
+
+SubClassOf(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#BachelorProgram> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Program>)
+
+# Class: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#CoreCourse> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#CoreCourse>)
+
+SubClassOf(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#CoreCourse> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Course>)
+
+# Class: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Departement> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Departement>)
+
+SubClassOf(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Departement> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Institution>)
+
+# Class: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#ElectiveCourse> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#ElectiveCourse>)
+
+SubClassOf(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#ElectiveCourse> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Course>)
+
+# Class: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#GraduateStudent> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#GraduateStudent>)
+
+SubClassOf(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#GraduateStudent> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Student>)
+
+# Class: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Library> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Library>)
+
+SubClassOf(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Library> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Resource>)
+
+# Class: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MasterDiploma> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MasterDiploma>)
+
+SubClassOf(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MasterDiploma> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Diploma>)
+
+# Class: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MasterProgram> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MasterProgram>)
+
+SubClassOf(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MasterProgram> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Program>)
+
+# Class: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#OnlineResource> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#OnlineResource>)
+
+SubClassOf(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#OnlineResource> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Resource>)
+
+# Class: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#PhDDiploma> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#PhDDiploma>)
+
+SubClassOf(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#PhDDiploma> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Diploma>)
+
+# Class: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#PhDProgram> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#PhDProgram>)
+
+SubClassOf(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#PhDProgram> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Program>)
+
+# Class: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#PrivateUniversity> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#PrivateUniversity>)
+
+SubClassOf(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#PrivateUniversity> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#University>)
+
+# Class: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Professor> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Professor>)
+
+SubClassOf(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Professor> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Teacher>)
+
+# Class: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#PublicUniversity> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#PublicUniversity>)
+
+SubClassOf(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#PublicUniversity> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#University>)
+
+# Class: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#ResearchLab> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#ResearchLab>)
+
+SubClassOf(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#ResearchLab> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Institution>)
+
+# Class: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Student> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Student>)
+
+SubClassOf(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Student> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Person>)
+
+# Class: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Teacher> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Teacher>)
+
+SubClassOf(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Teacher> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Person>)
+
+# Class: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#UndergraduateStudent> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#UndergraduateStudent>)
+
+SubClassOf(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#UndergraduateStudent> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Student>)
+
+# Class: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#University> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#University>)
+
+SubClassOf(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#University> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Institution>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#AI101> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#AI101>)
+
+ObjectPropertyAssertion(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#usesResource> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#AI101> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#LibraryParis>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#usesResource> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#AI101> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MOOCAI>)
+DataPropertyAssertion(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasECTS> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#AI101> "6"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasName> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#AI101> "\"Introduction à l'IA\"")
+
+# Individual: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#AILab> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#AILab>)
+
+DataPropertyAssertion(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasName> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#AILab> "\"Laboratoire IA\"")
+
+# Individual: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Algo201> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Algo201>)
+
+DataPropertyAssertion(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasECTS> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Algo201> "5"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasName> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Algo201> "\"Algorithmes Avancés\""^^rdf:langString)
+
+# Individual: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#AssistMartin> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#AssistMartin>)
+
+DataPropertyAssertion(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasID> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#AssistMartin> "1002"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasName> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#AssistMartin> "\"Assistant Martin\"")
+
+# Individual: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#BScCS> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#BScCS>)
+
+ObjectPropertyAssertion(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#awards> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#BScCS> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#BScDiploma>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#includesCourse> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#BScCS> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#AI101>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#includesCourse> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#BScCS> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Algo201>)
+DataPropertyAssertion(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasDuration> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#BScCS> "3"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasName> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#BScCS> "\"Licence Informatique\"")
+
+# Individual: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#BScDiploma> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#BScDiploma>)
+
+DataPropertyAssertion(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasLevel> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#BScDiploma> "\"Bachelor\"")
+DataPropertyAssertion(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasName> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#BScDiploma> "\"Diplôme de Licence Informatique\"")
+
+# Individual: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#CSDept> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#CSDept>)
+
+DataPropertyAssertion(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasName> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#CSDept> "\"Département Informatique\"")
+
+# Individual: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#JaneDoe> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#JaneDoe>)
+
+ObjectPropertyAssertion(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#enrolledIn> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#JaneDoe> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#BScCS>)
+DataPropertyAssertion(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasEnrollmentYear> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#JaneDoe> "2023"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasID> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#JaneDoe> "12345"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasName> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#JaneDoe> "\"Jane Doe\"")
+
+# Individual: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#JohnSmith> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#JohnSmith>)
+
+ObjectPropertyAssertion(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#enrolledIn> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#JohnSmith> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MScAI>)
+DataPropertyAssertion(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasID> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#JohnSmith> "67890"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasName> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#JohnSmith> "\"John Smith\"")
+
+# Individual: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#LibraryParis> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#LibraryParis>)
+
+DataPropertyAssertion(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasName> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#LibraryParis> "\"Bibliothèque de Paris\"")
+
+# Individual: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#ML301> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#ML301>)
+
+DataPropertyAssertion(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasECTS> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#ML301> "7"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasName> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#ML301> "\"Machine Learning\"")
+
+# Individual: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MOOCAI> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MOOCAI>)
+
+DataPropertyAssertion(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasName> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MOOCAI> "\"MOOC sur l'IA\"")
+
+# Individual: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MScAI> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MScAI>)
+
+ObjectPropertyAssertion(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#awards> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MScAI> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MasterDiploma>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#includesCourse> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MScAI> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#ML301>)
+DataPropertyAssertion(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasDuration> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MScAI> "2"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasName> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MScAI> "\"Master IA\""^^rdf:langString)
+
+# Individual: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MasterDiploma> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MasterDiploma>)
+
+DataPropertyAssertion(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasLevel> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MasterDiploma> "\"Master\"")
+DataPropertyAssertion(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasName> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MasterDiploma> "\"Diplôme de Master IA\"")
+
+# Individual: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MathDept> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MathDept>)
+
+DataPropertyAssertion(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasName> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MathDept> "\"Département Mathématiques\"")
+
+# Individual: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#ProfDupont> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#ProfDupont>)
+
+ObjectPropertyAssertion(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#teaches> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#ProfDupont> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#AI101>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#teaches> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#ProfDupont> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#ML301>)
+DataPropertyAssertion(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasID> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#ProfDupont> "1001"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasName> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#ProfDupont> "\"Prof. Dupont\"")
+
+# Individual: <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#UnivParis> (<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#UnivParis>)
+
+ClassAssertion(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#PublicUniversity> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#UnivParis>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#collaboratesWith> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#UnivParis> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#AILab>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasDepartment> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#UnivParis> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#CSDept>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasDepartment> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#UnivParis> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MathDept>)
+DataPropertyAssertion(<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasName> <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#UnivParis> "\"Université de Paris\"")
+
+
+)

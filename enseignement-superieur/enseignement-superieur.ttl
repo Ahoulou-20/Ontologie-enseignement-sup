@@ -1,0 +1,380 @@
+@prefix : <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5/> .
+
+<http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#awards
+:awards rdf:type owl:ObjectProperty ;
+        rdfs:domain :Program ;
+        rdfs:range :Diploma ;
+        rdfs:comment "Program → Diploma (un programme délivre un diplôme)" .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#collaboratesWith
+:collaboratesWith rdf:type owl:ObjectProperty ;
+                  rdfs:domain :ResearchLab ;
+                  rdfs:range :Departement ;
+                  rdfs:comment "ResearchLab → Department (un labo collabore avec un département)" .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#enrolledIn
+:enrolledIn rdf:type owl:ObjectProperty ;
+            rdfs:domain :Student ;
+            rdfs:range :Program ;
+            rdfs:comment "Student → Program (un étudiant est inscrit dans un programme)" .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasDepartment
+:hasDepartment rdf:type owl:ObjectProperty ;
+               rdfs:domain :University ;
+               rdfs:range :Departement ;
+               rdfs:comment "University → Department (une université a des départements)" .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#includesCourse
+:includesCourse rdf:type owl:ObjectProperty ;
+                rdfs:domain :Program ;
+                rdfs:range :Course ;
+                rdfs:comment "Program → Course (un programme inclut des cours)" .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#offersProgram
+:offersProgram rdf:type owl:ObjectProperty ;
+               rdfs:domain :University ;
+               rdfs:range :Program ;
+               rdfs:comment "University → Program (une université propose des programmes)" .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#supervises
+:supervises rdf:type owl:ObjectProperty ;
+            rdfs:domain :Teacher ;
+            rdfs:range :Student ;
+            rdfs:comment "Teacher → Student (un enseignant supervise un étudiant, ex. : thèse)" .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#teaches
+:teaches rdf:type owl:ObjectProperty ;
+         rdfs:domain :Teacher ;
+         rdfs:range :Course ;
+         rdfs:comment "Teacher → Course (un enseignant enseigne un cours)" .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#usesResource
+:usesResource rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:domain :Course ;
+              rdfs:range :Resource ;
+              rdfs:comment "Course → Resource (un cours utilise des ressources)" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasDuration
+:hasDuration rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Program ;
+             rdfs:range xsd:integer ;
+             rdfs:comment  ,
+                          "Program → integer (durée en années)" .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasECTS
+:hasECTS rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Course ;
+         rdfs:range xsd:integer ;
+         rdfs:comment  ,
+                      "Course → integer (crédits ECTS)" .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasEnrollmentYear
+:hasEnrollmentYear rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Student ;
+                   rdfs:range xsd:integer ;
+                   rdfs:comment  ,
+                                "Student → integer (année d'inscription)" .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasID
+:hasID rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Person ;
+       rdfs:range xsd:integer ;
+       rdfs:comment  ,
+                    "Student ou Teacher → integer (identifiant unique)" .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasLevel
+:hasLevel rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Diploma ;
+          rdfs:range rdf:langString ;
+          rdfs:comment "" ,
+                       "Diploma → string (niveau, ex. : \"Bachelor\")" .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasName
+:hasName rdf:type owl:DatatypeProperty ;
+         rdfs:domain owl:Thing ;
+         rdfs:range rdf:langString ;
+         rdfs:comment ""^^rdf:langString ,
+                      "Toute classe → string (nom de l'entité)" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Assistant
+:Assistant rdf:type owl:Class ;
+           rdfs:subClassOf :Teacher .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#BachelorDiploma
+:BachelorDiploma rdf:type owl:Class ;
+                 rdfs:subClassOf :Diploma .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#BachelorProgram
+:BachelorProgram rdf:type owl:Class ;
+                 rdfs:subClassOf :Program .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#CoreCourse
+:CoreCourse rdf:type owl:Class ;
+            rdfs:subClassOf :Course .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Course
+:Course rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Departement
+:Departement rdf:type owl:Class ;
+             rdfs:subClassOf :Institution .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Diploma
+:Diploma rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#ElectiveCourse
+:ElectiveCourse rdf:type owl:Class ;
+                rdfs:subClassOf :Course .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#GraduateStudent
+:GraduateStudent rdf:type owl:Class ;
+                 rdfs:subClassOf :Student .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Institution
+:Institution rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Library
+:Library rdf:type owl:Class ;
+         rdfs:subClassOf :Resource .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MasterDiploma
+:MasterDiploma rdf:type owl:Class ;
+               rdfs:subClassOf :Diploma .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MasterProgram
+:MasterProgram rdf:type owl:Class ;
+               rdfs:subClassOf :Program .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#OnlineResource
+:OnlineResource rdf:type owl:Class ;
+                rdfs:subClassOf :Resource .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Person
+:Person rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#PhDDiploma
+:PhDDiploma rdf:type owl:Class ;
+            rdfs:subClassOf :Diploma .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#PhDProgram
+:PhDProgram rdf:type owl:Class ;
+            rdfs:subClassOf :Program .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#PrivateUniversity
+:PrivateUniversity rdf:type owl:Class ;
+                   rdfs:subClassOf :University .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Professor
+:Professor rdf:type owl:Class ;
+           rdfs:subClassOf :Teacher .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Program
+:Program rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#PublicUniversity
+:PublicUniversity rdf:type owl:Class ;
+                  rdfs:subClassOf :University .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#ResearchLab
+:ResearchLab rdf:type owl:Class ;
+             rdfs:subClassOf :Institution .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Resource
+:Resource rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Student
+:Student rdf:type owl:Class ;
+         rdfs:subClassOf :Person .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Teacher
+:Teacher rdf:type owl:Class ;
+         rdfs:subClassOf :Person .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#UndergraduateStudent
+:UndergraduateStudent rdf:type owl:Class ;
+                      rdfs:subClassOf :Student .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#University
+:University rdf:type owl:Class ;
+            rdfs:subClassOf :Institution .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#AI101
+:AI101 rdf:type owl:NamedIndividual ;
+       :usesResource :LibraryParis ,
+                     :MOOCAI ;
+       :hasECTS 6 ;
+       :hasName "\"Introduction à l'IA\"" .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#AILab
+:AILab rdf:type owl:NamedIndividual ;
+       :hasName "\"Laboratoire IA\"" .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Algo201
+:Algo201 rdf:type owl:NamedIndividual ;
+         :hasECTS 5 ;
+         :hasName "\"Algorithmes Avancés\""^^rdf:langString .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#AssistMartin
+:AssistMartin rdf:type owl:NamedIndividual ;
+              :hasID 1002 ;
+              :hasName "\"Assistant Martin\"" .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#BScCS
+:BScCS rdf:type owl:NamedIndividual ;
+       :awards :BScDiploma ;
+       :includesCourse :AI101 ,
+                       :Algo201 ;
+       :hasDuration 3 ;
+       :hasName "\"Licence Informatique\"" .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#BScDiploma
+:BScDiploma rdf:type owl:NamedIndividual ;
+            :hasLevel "\"Bachelor\"" ;
+            :hasName "\"Diplôme de Licence Informatique\"" .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#CSDept
+:CSDept rdf:type owl:NamedIndividual ;
+        :hasName "\"Département Informatique\"" .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#JaneDoe
+:JaneDoe rdf:type owl:NamedIndividual ;
+         :enrolledIn :BScCS ;
+         :hasEnrollmentYear 2023 ;
+         :hasID 12345 ;
+         :hasName "\"Jane Doe\"" .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#JohnSmith
+:JohnSmith rdf:type owl:NamedIndividual ;
+           :enrolledIn :MScAI ;
+           :hasID 67890 ;
+           :hasName "\"John Smith\"" .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#LibraryParis
+:LibraryParis rdf:type owl:NamedIndividual ;
+              :hasName "\"Bibliothèque de Paris\"" .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#ML301
+:ML301 rdf:type owl:NamedIndividual ;
+       :hasECTS 7 ;
+       :hasName "\"Machine Learning\"" .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MOOCAI
+:MOOCAI rdf:type owl:NamedIndividual ;
+        :hasName "\"MOOC sur l'IA\"" .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MScAI
+:MScAI rdf:type owl:NamedIndividual ;
+       :awards :MasterDiploma ;
+       :includesCourse :ML301 ;
+       :hasDuration 2 ;
+       :hasName "\"Master IA\""^^rdf:langString .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MasterDiploma
+:MasterDiploma rdf:type owl:NamedIndividual ;
+               :hasLevel "\"Master\"" ;
+               :hasName "\"Diplôme de Master IA\"" .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MathDept
+:MathDept rdf:type owl:NamedIndividual ;
+          :hasName "\"Département Mathématiques\"" .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#ProfDupont
+:ProfDupont rdf:type owl:NamedIndividual ;
+            :teaches :AI101 ,
+                     :ML301 ;
+            :hasID 1001 ;
+            :hasName "\"Prof. Dupont\"" .
+
+
+###  http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#UnivParis
+:UnivParis rdf:type owl:NamedIndividual ,
+                    :PublicUniversity ;
+           :collaboratesWith :AILab ;
+           :hasDepartment :CSDept ,
+                          :MathDept ;
+           :hasName "\"Université de Paris\"" .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

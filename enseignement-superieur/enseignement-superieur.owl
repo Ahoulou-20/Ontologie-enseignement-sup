@@ -1,0 +1,584 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5/"
+     xml:base="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-5="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#awards -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#awards">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Program"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Diploma"/>
+        <rdfs:comment>Program → Diploma (un programme délivre un diplôme)</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#collaboratesWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#collaboratesWith">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#ResearchLab"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Departement"/>
+        <rdfs:comment>ResearchLab → Department (un labo collabore avec un département)</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#enrolledIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#enrolledIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Program"/>
+        <rdfs:comment>Student → Program (un étudiant est inscrit dans un programme)</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasDepartment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasDepartment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#University"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Departement"/>
+        <rdfs:comment>University → Department (une université a des départements)</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#includesCourse -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#includesCourse">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Program"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Course"/>
+        <rdfs:comment>Program → Course (un programme inclut des cours)</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#offersProgram -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#offersProgram">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#University"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Program"/>
+        <rdfs:comment>University → Program (une université propose des programmes)</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#supervises -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#supervises">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Teacher"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Student"/>
+        <rdfs:comment>Teacher → Student (un enseignant supervise un étudiant, ex. : thèse)</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#teaches -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#teaches">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Teacher"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Course"/>
+        <rdfs:comment>Teacher → Course (un enseignant enseigne un cours)</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#usesResource -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#usesResource">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Resource"/>
+        <rdfs:comment>Course → Resource (un cours utilise des ressources)</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasDuration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasDuration">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Program"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"></rdfs:comment>
+        <rdfs:comment>Program → integer (durée en années)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasECTS -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasECTS">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"></rdfs:comment>
+        <rdfs:comment>Course → integer (crédits ECTS)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasEnrollmentYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasEnrollmentYear">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"></rdfs:comment>
+        <rdfs:comment>Student → integer (année d&apos;inscription)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"></rdfs:comment>
+        <rdfs:comment>Student ou Teacher → integer (identifiant unique)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasLevel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Diploma"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:comment>Diploma → string (niveau, ex. : &quot;Bachelor&quot;)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#hasName">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"></rdfs:comment>
+        <rdfs:comment>Toute classe → string (nom de l&apos;entité)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Assistant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Assistant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Teacher"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#BachelorDiploma -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#BachelorDiploma">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Diploma"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#BachelorProgram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#BachelorProgram">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Program"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#CoreCourse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#CoreCourse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Course -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Course"/>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Departement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Departement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Institution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Diploma -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Diploma"/>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#ElectiveCourse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#ElectiveCourse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#GraduateStudent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#GraduateStudent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Student"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Institution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Institution"/>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Library -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Library">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MasterDiploma -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MasterDiploma">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Diploma"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MasterProgram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MasterProgram">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Program"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#OnlineResource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#OnlineResource">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#PhDDiploma -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#PhDDiploma">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Diploma"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#PhDProgram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#PhDProgram">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Program"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#PrivateUniversity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#PrivateUniversity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#University"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Professor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Professor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Teacher"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Program -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Program"/>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#PublicUniversity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#PublicUniversity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#University"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#ResearchLab -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#ResearchLab">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Institution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Resource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Resource"/>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Teacher -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Teacher">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#UndergraduateStudent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#UndergraduateStudent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Student"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#University -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#University">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Institution"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#AI101 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#AI101">
+        <untitled-ontology-5:usesResource rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#LibraryParis"/>
+        <untitled-ontology-5:usesResource rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MOOCAI"/>
+        <untitled-ontology-5:hasECTS rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</untitled-ontology-5:hasECTS>
+        <untitled-ontology-5:hasName>&quot;Introduction à l&apos;IA&quot;</untitled-ontology-5:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#AILab -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#AILab">
+        <untitled-ontology-5:hasName>&quot;Laboratoire IA&quot;</untitled-ontology-5:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Algo201 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Algo201">
+        <untitled-ontology-5:hasECTS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</untitled-ontology-5:hasECTS>
+        <untitled-ontology-5:hasName rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">&quot;Algorithmes Avancés&quot;</untitled-ontology-5:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#AssistMartin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#AssistMartin">
+        <untitled-ontology-5:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1002</untitled-ontology-5:hasID>
+        <untitled-ontology-5:hasName>&quot;Assistant Martin&quot;</untitled-ontology-5:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#BScCS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#BScCS">
+        <untitled-ontology-5:awards rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#BScDiploma"/>
+        <untitled-ontology-5:includesCourse rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#AI101"/>
+        <untitled-ontology-5:includesCourse rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#Algo201"/>
+        <untitled-ontology-5:hasDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</untitled-ontology-5:hasDuration>
+        <untitled-ontology-5:hasName>&quot;Licence Informatique&quot;</untitled-ontology-5:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#BScDiploma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#BScDiploma">
+        <untitled-ontology-5:hasLevel>&quot;Bachelor&quot;</untitled-ontology-5:hasLevel>
+        <untitled-ontology-5:hasName>&quot;Diplôme de Licence Informatique&quot;</untitled-ontology-5:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#CSDept -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#CSDept">
+        <untitled-ontology-5:hasName>&quot;Département Informatique&quot;</untitled-ontology-5:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#JaneDoe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#JaneDoe">
+        <untitled-ontology-5:enrolledIn rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#BScCS"/>
+        <untitled-ontology-5:hasEnrollmentYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2023</untitled-ontology-5:hasEnrollmentYear>
+        <untitled-ontology-5:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12345</untitled-ontology-5:hasID>
+        <untitled-ontology-5:hasName>&quot;Jane Doe&quot;</untitled-ontology-5:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#JohnSmith -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#JohnSmith">
+        <untitled-ontology-5:enrolledIn rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MScAI"/>
+        <untitled-ontology-5:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">67890</untitled-ontology-5:hasID>
+        <untitled-ontology-5:hasName>&quot;John Smith&quot;</untitled-ontology-5:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#LibraryParis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#LibraryParis">
+        <untitled-ontology-5:hasName>&quot;Bibliothèque de Paris&quot;</untitled-ontology-5:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#ML301 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#ML301">
+        <untitled-ontology-5:hasECTS rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7</untitled-ontology-5:hasECTS>
+        <untitled-ontology-5:hasName>&quot;Machine Learning&quot;</untitled-ontology-5:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MOOCAI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MOOCAI">
+        <untitled-ontology-5:hasName>&quot;MOOC sur l&apos;IA&quot;</untitled-ontology-5:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MScAI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MScAI">
+        <untitled-ontology-5:awards rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MasterDiploma"/>
+        <untitled-ontology-5:includesCourse rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#ML301"/>
+        <untitled-ontology-5:hasDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</untitled-ontology-5:hasDuration>
+        <untitled-ontology-5:hasName rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">&quot;Master IA&quot;</untitled-ontology-5:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MasterDiploma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MasterDiploma">
+        <untitled-ontology-5:hasLevel>&quot;Master&quot;</untitled-ontology-5:hasLevel>
+        <untitled-ontology-5:hasName>&quot;Diplôme de Master IA&quot;</untitled-ontology-5:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MathDept -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MathDept">
+        <untitled-ontology-5:hasName>&quot;Département Mathématiques&quot;</untitled-ontology-5:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#ProfDupont -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#ProfDupont">
+        <untitled-ontology-5:teaches rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#AI101"/>
+        <untitled-ontology-5:teaches rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#ML301"/>
+        <untitled-ontology-5:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1001</untitled-ontology-5:hasID>
+        <untitled-ontology-5:hasName>&quot;Prof. Dupont&quot;</untitled-ontology-5:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#UnivParis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#UnivParis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#PublicUniversity"/>
+        <untitled-ontology-5:collaboratesWith rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#AILab"/>
+        <untitled-ontology-5:hasDepartment rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#CSDept"/>
+        <untitled-ontology-5:hasDepartment rdf:resource="http://www.semanticweb.org/adouk/ontologies/2025/11/untitled-ontology-5#MathDept"/>
+        <untitled-ontology-5:hasName>&quot;Université de Paris&quot;</untitled-ontology-5:hasName>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
